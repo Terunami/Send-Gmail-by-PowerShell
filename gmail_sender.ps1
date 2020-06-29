@@ -7,19 +7,6 @@ Param(
     [string]$body,
     [array]$atts
 )
-ソースコード
-出来たコードはこちら
-gmail_sender.ps1
-
-Param(
-    [parameter(mandatory=$true)][string]$from,
-    [parameter(mandatory=$true)][string]$to,
-    [string]$cc,
-    [string]$bcc,
-    [string]$title,
-    [string]$body,
-    [array]$atts
-)
 
 function ConvertTo-Base64Url($str){
     $bytes = [System.Text.Encoding]::UTF8.GetBytes($str)
